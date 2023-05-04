@@ -23,8 +23,21 @@ class _HomeState extends State<Home> {
     context.read<HomeViewModel>().scrollController.addListener(() {
       if (context.read<HomeViewModel>().isScrolledToBottom()) {
         context.read<HomeViewModel>().appBarColor = Colors.white;
+        context.read<HomeViewModel>().scrollPhysics =
+            const ClampingScrollPhysics();
       } else {
         context.read<HomeViewModel>().appBarColor = Colors.transparent;
+      }
+    });
+
+    context.read<HomeViewModel>().scrollController2.addListener(() {
+      if (!context.read<HomeViewModel>().isScrollTop() &&
+          context.read<HomeViewModel>().isScrolledToBottom()) {
+        context.read<HomeViewModel>().scrollPhysics =
+            const ClampingScrollPhysics();
+      } else {
+        context.read<HomeViewModel>().scrollPhysics =
+            const NeverScrollableScrollPhysics();
       }
     });
 
@@ -50,7 +63,7 @@ class _HomeState extends State<Home> {
                     horizontal: 16.w,
                     vertical: 16.h,
                   ),
-                  height: (size.height - (140.h + padding.top)),
+                  height: (size.height - (160.h + padding.top)),
                   width: size.width,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -77,14 +90,17 @@ class _HomeState extends State<Home> {
                       ),
                       15.verticalSpace,
                       Expanded(
-                        child: SingleChildScrollView(
-                          physics: const ClampingScrollPhysics(),
-                          child: Wrap(
-                            children: [
-                              for (var cloth
-                                  in context.read<HomeViewModel>().products)
-                                ClothTile(cloth: cloth)
-                            ],
+                        child: Consumer<HomeViewModel>(
+                          builder: (_, value, __) => SingleChildScrollView(
+                            physics: value.scrollPhysics,
+                            controller: value.scrollController2,
+                            child: Wrap(
+                              children: [
+                                for (var cloth
+                                    in context.read<HomeViewModel>().products)
+                                  ClothTile(cloth: cloth)
+                              ],
+                            ),
                           ),
                         ),
                       ),

@@ -1,6 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:moniepoint_test/src/app/app.dart';
 import 'package:moniepoint_test/src/config/theme/theme.dart';
 import 'package:moniepoint_test/src/viewmodel/home_viewmodel.dart';
 import 'package:provider/provider.dart';
@@ -19,10 +22,12 @@ class _MyAppBarState extends State<MyAppBar> {
   @override
   Widget build(BuildContext context) {
     return Consumer<HomeViewModel>(
-      builder: (context, value, child) => Container(
+      builder: (context, value, child) => AnimatedContainer(
+        duration: const Duration(milliseconds: 50),
+        curve: Curves.fastLinearToSlowEaseIn,
         color: value.appBarColor,
         padding: EdgeInsets.only(
-          top: MediaQuery.of(context).padding.top * 1.2,
+          top: padding.top * (Platform.isIOS ? 1.2 : 2.2),
           left: 16.w,
           right: 16.w,
           bottom: 16.w,

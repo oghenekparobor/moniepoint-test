@@ -4,6 +4,7 @@ import 'package:fluttericon/typicons_icons.dart';
 import 'package:moniepoint_test/src/app/app.dart';
 import 'package:moniepoint_test/src/config/route/route.dart';
 import 'package:moniepoint_test/src/config/theme/theme.dart';
+import 'package:moniepoint_test/src/core/constant/assets.dart';
 import 'package:moniepoint_test/src/viewmodel/model/product.dart';
 
 class ClothTile extends StatefulWidget {
@@ -53,8 +54,9 @@ class _ClothTileState extends State<ClothTile> {
               children: [
                 Stack(
                   children: [
-                    Image.network(
-                      widget.cloth.image,
+                    FadeInImage.assetNetwork(
+                      image: widget.cloth.image,
+                      placeholder: kNoImage,
                       height: 80.h,
                       width: double.infinity,
                       fit: BoxFit.cover,

@@ -164,4 +164,23 @@ class HomeViewModel with ChangeNotifier {
     'Goto classic button down shirt',
     'Shirt in classic fit featuring button down collar',
   ];
+
+  ScrollPhysics _scrollPhysics = const ClampingScrollPhysics();
+
+  ScrollPhysics get scrollPhysics => _scrollPhysics;
+
+  set scrollPhysics(ScrollPhysics sp) {
+    _scrollPhysics = sp;
+
+    notifyListeners();
+  }
+
+  ScrollController scrollController2 = ScrollController();
+
+  bool isScrollTop() {
+    final double minScrool = scrollController2.position.minScrollExtent;
+    final double currentScroll = scrollController2.position.pixels;
+
+    return minScrool == currentScroll;
+  }
 }

@@ -9,3 +9,4 @@ String kShare = 'share-lined'.icon;
 String kClothesRack = 'clothes-rack'.img;
 String kBeauty = 'beauty'.img;
 String kBlackFriday = 'black-friday'.img;
+String kNoImage = 'no-image'.img;

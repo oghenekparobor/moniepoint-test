@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moniepoint_test/src/config/theme/theme.dart';
@@ -22,7 +24,7 @@ class BuyNow extends StatelessWidget {
           right: 16.w,
           left: 16.h,
           top: 16.h,
-          bottom: 40.h,
+          bottom: Platform.isIOS ? 40.h : 16.h,
         ),
         child: Row(
           children: [
