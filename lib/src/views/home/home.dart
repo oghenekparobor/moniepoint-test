@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
                     horizontal: 16.w,
                     vertical: 16.h,
                   ),
-                  height: (size.height - (160.h + padding.top)),
+                  height: (size.height - (170.h + padding.top)),
                   width: size.width,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
