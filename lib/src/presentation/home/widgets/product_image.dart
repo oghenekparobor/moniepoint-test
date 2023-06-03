@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moniepoint_test/src/viewmodel/model/product.dart';
+import 'package:moniepoint/src/viewmodel/model/product.dart';
 
 class ProductImage extends StatefulWidget {
   ProductImage({

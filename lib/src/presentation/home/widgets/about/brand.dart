@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moniepoint_test/src/config/theme/theme.dart';
+import 'package:moniepoint/src/config/theme/theme.dart';
 
 class BrandCategory extends StatelessWidget {
   const BrandCategory({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:moniepoint_test/src/utils/constant/assets.dart';
-import 'package:moniepoint_test/src/viewmodel/model/product.dart';
+import 'package:moniepoint/src/utils/constant/assets.dart';
+import 'package:moniepoint/src/viewmodel/model/product.dart';
 
 class HomeViewModel with ChangeNotifier {
   var bars = [

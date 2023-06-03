@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moniepoint_test/src/app/app.dart';
-import 'package:moniepoint_test/src/config/theme/theme.dart';
-import 'package:moniepoint_test/src/viewmodel/home_viewmodel.dart';
+import 'package:moniepoint/src/app/app.dart';
+import 'package:moniepoint/src/config/theme/theme.dart';
+import 'package:moniepoint/src/viewmodel/home_viewmodel.dart';
 import 'package:provider/provider.dart';
 
 class Banners extends StatelessWidget {
@@ -39,13 +38,11 @@ class Banners extends StatelessWidget {
                         flex: 2,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,
-                          crossAxisAlignment:
-                              CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               '# ${e['tag']}',
-                              style: theme.textTheme.bodySmall!
-                                  .copyWith(
+                              style: theme.textTheme.bodySmall!.copyWith(
                                 color: Colors.black,
                                 fontSize: 10.sp,
                                 fontWeight: FontWeight.bold,
@@ -54,8 +51,7 @@ class Banners extends StatelessWidget {
                             3.verticalSpace,
                             Text(
                               '${e['large']}',
-                              style: theme.textTheme.displayLarge!
-                                  .copyWith(
+                              style: theme.textTheme.displayLarge!.copyWith(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold,
                               ),
@@ -63,8 +59,7 @@ class Banners extends StatelessWidget {
                             3.verticalSpace,
                             Text(
                               '${e['small']}',
-                              style: theme.textTheme.bodySmall!
-                                  .copyWith(
+                              style: theme.textTheme.bodySmall!.copyWith(
                                 color: Colors.black,
                                 fontSize: 8.sp,
                               ),
@@ -77,13 +72,11 @@ class Banners extends StatelessWidget {
                               ),
                               decoration: BoxDecoration(
                                 color: const Color(0xFF2B2D41),
-                                borderRadius:
-                                    BorderRadius.circular(5.r),
+                                borderRadius: BorderRadius.circular(5.r),
                               ),
                               child: Text(
                                 '${e['button']}',
-                                style: theme.textTheme.bodySmall!
-                                    .copyWith(
+                                style: theme.textTheme.bodySmall!.copyWith(
                                   color: Colors.white,
                                   fontSize: 8.sp,
                                   fontWeight: FontWeight.bold,

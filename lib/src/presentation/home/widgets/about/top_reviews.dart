@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moniepoint_test/src/config/theme/theme.dart';
-import 'package:moniepoint_test/src/presentation/home/widgets/about/review_tile.dart';
+import 'package:moniepoint/src/config/theme/theme.dart';
+import 'package:moniepoint/src/presentation/home/widgets/about/review_tile.dart';
 
 class TopReviews extends StatelessWidget {
   const TopReviews({

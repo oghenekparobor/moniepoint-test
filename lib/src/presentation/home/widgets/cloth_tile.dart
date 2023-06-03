@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluttericon/typicons_icons.dart';
-import 'package:moniepoint_test/src/app/app.dart';
-import 'package:moniepoint_test/src/config/route/route.dart';
-import 'package:moniepoint_test/src/config/theme/theme.dart';
-import 'package:moniepoint_test/src/utils/constant/assets.dart';
-import 'package:moniepoint_test/src/viewmodel/model/product.dart';
+import 'package:moniepoint/src/app/app.dart';
+import 'package:moniepoint/src/config/route/route.dart';
+import 'package:moniepoint/src/config/theme/theme.dart';
+import 'package:moniepoint/src/utils/constant/assets.dart';
+import 'package:moniepoint/src/viewmodel/model/product.dart';
 
 class ClothTile extends StatefulWidget {
   const ClothTile({

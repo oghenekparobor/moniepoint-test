@@ -1,4 +1,4 @@
-name: moniepoint_test
+name: moniepoint
 description: A new Flutter project.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -11,7 +11,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
 
   cupertino_icons: ^1.0.2
   flutter_screenutil: ^5.7.0

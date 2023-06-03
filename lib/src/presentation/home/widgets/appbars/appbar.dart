@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:moniepoint_test/src/app/app.dart';
-import 'package:moniepoint_test/src/config/theme/theme.dart';
-import 'package:moniepoint_test/src/viewmodel/home_viewmodel.dart';
+import 'package:moniepoint/src/app/app.dart';
+import 'package:moniepoint/src/config/theme/theme.dart';
+import 'package:moniepoint/src/viewmodel/home_viewmodel.dart';
 import 'package:provider/provider.dart';
 
 class MyAppBar extends StatefulWidget with PreferredSizeWidget {

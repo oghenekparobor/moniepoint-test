@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:moniepoint_test/src/presentation/home/home.dart';
-import 'package:moniepoint_test/src/presentation/home/product_detail.dart';
+import 'package:moniepoint/src/presentation/home/home.dart';
+import 'package:moniepoint/src/presentation/home/product_detail.dart';
 
 class Routes {
   static const String home = '/';

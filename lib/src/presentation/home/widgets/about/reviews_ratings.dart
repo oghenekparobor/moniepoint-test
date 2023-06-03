@@ -1,8 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluttericon/typicons_icons.dart';
-import 'package:moniepoint_test/src/config/theme/theme.dart';
+import 'package:moniepoint/src/config/theme/theme.dart';
 
 class ReviewsRatings extends StatelessWidget {
   const ReviewsRatings({
@@ -64,9 +63,8 @@ class ReviewsRatings extends StatelessWidget {
                           [1, 2, 3, 4, 5].map(
                             (e) => Icon(
                               Typicons.star_filled,
-                              color: e < 5
-                                  ? Colors.amber
-                                  : Colors.grey.shade400,
+                              color:
+                                  e < 5 ? Colors.amber : Colors.grey.shade400,
                               size: 18.sp,
                             ),
                           ),
@@ -120,8 +118,7 @@ class ReviewsRatings extends StatelessWidget {
                                 ),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
-                                  crossAxisAlignment:
-                                      CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Container(
                                       width: p1.maxWidth * (0.15 * i),
@@ -129,8 +126,7 @@ class ReviewsRatings extends StatelessWidget {
                                       alignment: Alignment.centerLeft,
                                       decoration: BoxDecoration(
                                         color: Colors.green,
-                                        borderRadius:
-                                            BorderRadius.circular(10),
+                                        borderRadius: BorderRadius.circular(10),
                                       ),
                                     ),
                                   ],
