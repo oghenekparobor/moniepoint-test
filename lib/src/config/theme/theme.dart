@@ -7,32 +7,32 @@ ThemeData theme = ThemeData(
   brightness: Brightness.light,
   visualDensity: VisualDensity.adaptivePlatformDensity,
   textTheme: TextTheme(
-    bodySmall: GoogleFonts.montserratAlternates(
+    bodySmall: GoogleFonts.montserrat(
       color: const Color(0xFFFFFFFF),
       decoration: TextDecoration.none,
       fontStyle: FontStyle.normal,
       fontSize: 13.sp,
     ),
-    displayLarge: GoogleFonts.montserratAlternates(
+    displayLarge: GoogleFonts.montserrat(
       color: Colors.white,
       decoration: TextDecoration.none,
       fontStyle: FontStyle.normal,
       fontSize: 28.sp,
     ),
-    displayMedium: GoogleFonts.montserratAlternates(
+    displayMedium: GoogleFonts.montserrat(
       color: const Color(0xFF0E0E0D),
       decoration: TextDecoration.none,
       fontStyle: FontStyle.normal,
       fontWeight: FontWeight.normal,
       fontSize: 22.sp,
     ),
-    bodyMedium: GoogleFonts.montserratAlternates(
+    bodyMedium: GoogleFonts.montserrat(
       color: const Color(0xFF0E0E0D),
       decoration: TextDecoration.none,
       fontStyle: FontStyle.normal,
       fontSize: 16.sp,
     ),
-    bodyLarge: GoogleFonts.montserratAlternates(
+    bodyLarge: GoogleFonts.montserrat(
       color: Colors.white,
       fontWeight: FontWeight.bold,
       decoration: TextDecoration.none,
@@ -76,7 +76,7 @@ ThemeData theme = ThemeData(
     iconTheme: const IconThemeData(color: Color(0xFF373737)),
     actionsIconTheme: const IconThemeData(color: Colors.black),
     centerTitle: true,
-    titleTextStyle: GoogleFonts.montserratAlternates(
+    titleTextStyle: GoogleFonts.montserrat(
       color: const Color(0xFF373737),
       fontSize: 16.sp,
       fontWeight: FontWeight.w600,

@@ -3,11 +3,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moniepoint_test/src/app/app.dart';
 import 'package:moniepoint_test/src/config/theme/theme.dart';
 import 'package:moniepoint_test/src/viewmodel/home_viewmodel.dart';
-import 'package:moniepoint_test/src/views/home/widgets/appbars/appbar.dart';
-import 'package:moniepoint_test/src/views/home/widgets/banner.dart';
-import 'package:moniepoint_test/src/views/home/widgets/bottom_nav.dart';
-import 'package:moniepoint_test/src/views/home/widgets/category.dart';
-import 'package:moniepoint_test/src/views/home/widgets/cloth_tile.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/appbars/appbar.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/banner.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/bottom_nav.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/category.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/cloth_tile.dart';
 import 'package:provider/provider.dart';
 
 class Home extends StatefulWidget {

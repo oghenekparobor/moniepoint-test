@@ -1,4 +1,4 @@
-import 'package:moniepoint_test/src/core/extension/string.dart';
+import 'package:moniepoint_test/src/utils/extension/string.dart';
 
 String kCartEmpty = 'shopping-empty'.icon;
 String kCartFull = 'shopping-full'.icon;

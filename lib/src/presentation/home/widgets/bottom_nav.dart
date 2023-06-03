@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moniepoint_test/src/config/theme/theme.dart';
-import 'package:moniepoint_test/src/core/extension/string.dart';
+import 'package:moniepoint_test/src/utils/extension/string.dart';
 import 'package:moniepoint_test/src/viewmodel/home_viewmodel.dart';
 import 'package:provider/provider.dart';
 

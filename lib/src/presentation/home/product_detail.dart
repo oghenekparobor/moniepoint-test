@@ -4,11 +4,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moniepoint_test/src/config/theme/theme.dart';
 import 'package:moniepoint_test/src/viewmodel/home_viewmodel.dart';
 import 'package:moniepoint_test/src/viewmodel/model/product.dart';
-import 'package:moniepoint_test/src/views/home/widgets/about-item/about_item.dart';
-import 'package:moniepoint_test/src/views/home/widgets/appbars/product_appbar.dart';
-import 'package:moniepoint_test/src/views/home/widgets/buynow.dart';
-import 'package:moniepoint_test/src/views/home/widgets/product_image.dart';
-import 'package:moniepoint_test/src/views/home/widgets/summary.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/about/about_item.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/appbars/product_appbar.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/buynow.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/product_image.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/summary.dart';
 import 'package:provider/provider.dart';
 
 class ProductDetails extends StatelessWidget {

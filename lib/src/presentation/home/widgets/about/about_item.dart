@@ -3,14 +3,14 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:moniepoint_test/src/config/theme/theme.dart';
 import 'package:moniepoint_test/src/viewmodel/home_viewmodel.dart';
 import 'package:moniepoint_test/src/viewmodel/model/product.dart';
-import 'package:moniepoint_test/src/views/home/widgets/about-item/brand.dart';
-import 'package:moniepoint_test/src/views/home/widgets/about-item/description.dart';
-import 'package:moniepoint_test/src/views/home/widgets/about-item/img_vids.dart';
-import 'package:moniepoint_test/src/views/home/widgets/about-item/reviews_ratings.dart';
-import 'package:moniepoint_test/src/views/home/widgets/about-item/seller_info.dart';
-import 'package:moniepoint_test/src/views/home/widgets/about-item/shopping.dart';
-import 'package:moniepoint_test/src/views/home/widgets/about-item/top_reviews.dart';
-import 'package:moniepoint_test/src/views/home/widgets/cloth_tile.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/about/brand.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/about/description.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/about/img_vids.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/about/reviews_ratings.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/about/seller_info.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/about/shopping.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/about/top_reviews.dart';
+import 'package:moniepoint_test/src/presentation/home/widgets/cloth_tile.dart';
 import 'package:provider/provider.dart';
 
 class AboutItem extends StatelessWidget {
